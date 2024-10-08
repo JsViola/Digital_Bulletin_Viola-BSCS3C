@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    min-height: 100vh;
+    background: #1BB295;
+}
+
+.register{
+    margin-left: 20%;
+    width: 900px;
+    height: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    min-height: 100vh;
+    max-height: 100%;
+}
+
+.rowbox {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.rowbtn {
+  display: flex;
+  gap: 460px;
+}
+
+.lastname  {
+  width: 180px;
+}
+
+.firstname  {
+  width: 260px;
+}
+
+.middleinitial  {
+  width: 50px;
+}
+
+.email  {
+  width: 270px;
+  margin-left: 21px;
+}
+
+.IdNo  {
+  width: 230px;
+}
+
+.password  {
+  width: 250px;
+  margin-left: 40px;
+}
+
+.confirmpassword  {
+  width: 250px;
+}
+
+.box {
+    flex: 1; 
+}
+
+form {
+    padding: 25px;
+    background: #fff;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  }
+
+form h2 {
+  font-size: 27px;
+  text-align: center;
+  margin: 0px 0 30px;
+}
+
+form .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+form label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+form input,
+form select {
+  height: 45px;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  outline: none;
+  background: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #bfbfbf;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #9a9a9a;
+}
+
+form input.error,
+form select.error {
+  border-color: #f91919;
+  background: #f9f0f1;
+}
+
+form small {
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+  color: #f91919;
+}
+
+form .password i {
+  position: absolute;
+  right: 0px;
+  height: 45px;
+  top: 28px;
+  font-size: 13px;
+  line-height: 45px;
+  width: 45px;
+  cursor: pointer;
+  color: #939393;
+  text-align: center;
+}
+
+.submit-btn {
+  margin-top: 30px;
+  margin-left: 350px;
+  width: 50px;
+}
+
+.submit-btn input {
+  color: white;
+  border: none;
+  height: auto;
+  font-size: 16px;
+  padding: 13px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  background: #1BB295;
+  transition: 0.2s ease;
+  width: 50px;
+}
+
+.submit-btn input:hover {
+  background: #179b81;
+}
+
+.policy-text {
+  display: flex;
+  margin-top: 14px;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.policy-text input {
+  width: 200px;
+  height: 14px;
+  margin-left: -40px;
+}
+
+form :where(.forgot-pass-link, .policy-text) {
+  display: inline-flex;
+  margin-top: 13px;
+  font-size: 0.95rem;
+}
+
+.input-field input:is(:focus, :valid)~label {
+  transform: translateY(-120%);
+  color: #00bcd4;
+  font-size: 0.75rem;
+}
+
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #4a4646;
+  pointer-events: none;
+  transition: 0.2s ease;
+}
+
+.form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: 0.125rem;
+}
+.form-check .form-check-input {
+  float: left;
+  margin-left: -1.5em;
+}
+
+.form-check-reverse {
+  padding-right: 1.5em;
+  padding-left: 0;
+  text-align: right;
+}
+.form-check-reverse .form-check-input {
+  float: right;
+  margin-right: -1.5em;
+  margin-left: 0;
+}
+
+.form-check-input {
+  --bs-form-check-bg: var(--bs-body-bg);
+  flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.25em;
+  vertical-align: top;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--bs-form-check-bg);
+  background-image: var(--bs-form-check-bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.form-check-input[type=checkbox] {
+  border-radius: 0.25em;
+}
+.form-check-input[type=radio] {
+  border-radius: 50%;
+}
+.form-check-input:active {
+  filter: brightness(90%);
+}
+.form-check-input:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.form-check-input:checked {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+.form-check-input:checked[type=checkbox] {
+  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+}
+.form-check-input:checked[type=radio] {
+  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+.form-check-input[type=checkbox]:indeterminate {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
+}
+.form-check-input:disabled {
+  pointer-events: none;
+  filter: none;
+  opacity: 0.5;
+}
+.form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.form-switch {
+  padding-left: 2.5em;
+}
+.form-switch .form-check-input {
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+  width: 2em;
+  margin-left: -2.5em;
+  background-image: var(--bs-form-switch-bg);
+  background-position: left center;
+  border-radius: 2em;
+  transition: background-position 0.15s ease-in-out;
+}
+
+.was-validated .form-check-input:invalid, .form-check-input.is-invalid {
+  border-color: var(--bs-form-invalid-border-color);
+}
+.was-validated .form-check-input:invalid:checked, .form-check-input.is-invalid:checked {
+  background-color: var(--bs-form-invalid-color);
+}
+.was-validated .form-check-input:invalid:focus, .form-check-input.is-invalid:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-danger-rgb), 0.25);
+}
+.was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label {
+  color: var(--bs-form-invalid-color);
+}
+
+.form-check-inline .form-check-input ~ .invalid-feedback {
+  margin-left: 0.5em;
+}
